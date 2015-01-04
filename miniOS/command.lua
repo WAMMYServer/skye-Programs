@@ -203,6 +203,7 @@ cls ---- Clears the screen.
 ver ---- Outputs version information.
 mem ---- Outputs memory information.
 dir ---- Lists the files on the current disk.
+ls ----- Works the same as 'dir'
 cmds --- Lists the commands.
 intro -- Outputs the introduction message.
 drives - Lists the drives and their addresses.
