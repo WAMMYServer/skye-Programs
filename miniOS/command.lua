@@ -178,6 +178,7 @@ local function runline(line)
 	if command == "cls" then term.clear() return true end
 	if command == "ver" then print(_OSVERSION) return true end
 	if command == "mem" then print(math.floor(computer.totalMemory()/1024).."k RAM, "..math.floor(computer.freeMemory()/1024).."k Free") return true end
+	if command == "ls" then if parts[2] then dir(fixPath(parts[2])) else dir() end return true end
 	if command == "dir" then if parts[2] then dir(fixPath(parts[2])) else dir() end return true end
 	if command == "intro" then intro() return true end
 	if command == "disks" then listdrives() return true end
